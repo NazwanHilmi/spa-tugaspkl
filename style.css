@@ -470,13 +470,19 @@ header .content p {
     transform: scale(1.1);
 }
 
-/* CSS used here will be applied after bootstrap.css */
-.ekko-lightbox-nav-overlay a {
+/* gallery */
+/* .ekko-lightbox-nav-overlay a {
     color: goldenrod;
-}
+} */
 .gallery-title {
     text-align: center;
 	font-weight: 500;
 	border-bottom: 3px solid orange;
-	margin-top: 1em;
+	margin-top: 2em;
+    padding: 0 0 30px 0;
+}
+
+.source-title {
+    text-align: center;
+    font-size: 10px;
 }
