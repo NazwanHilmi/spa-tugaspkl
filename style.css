@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+    transition-duration: 0.5s;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
-
 
 /* Navbar */
 
@@ -28,7 +31,7 @@ header {
 
 .navigation {
     width: 100%;
-    padding: 20px 0 10px 0 ;
+    padding: 10px 0 10px 0 ;
     transition: background-color 0.5s ease;
 }
 
@@ -37,9 +40,14 @@ header {
     top: 0;
     z-index: 10;
     width: 100%;
-    padding: 20px 0 5px 0 ;
+    padding: 15px 0 5px 0 ;
     background-color: #384366;;
 }
+
+.navigation.scrolled .box-navigation .box:nth-child(1) img  {
+    padding: 0;
+}
+
 
 .navigation .box-navigation {
     font-family: "Montserrat", sans-serif;
@@ -90,7 +98,7 @@ header {
 }
 
 .navigation .box-navigation .box:nth-child(2) ul li a span{
-    padding: 10px;
+    padding: 8px;
     border-radius: 5px;
     background-color: #f49a39;
     text-decoration: none;
@@ -111,6 +119,11 @@ header {
 }
 
 @media screen and (max-width : 990px) {
+
+    .navigation.scrolled {
+        padding: 10px 0 5px 0 ;
+    }
+    
 
     .box-navigation .box:nth-child(1) h1 {
         font-size: 20px;
@@ -471,9 +484,10 @@ header .content p {
 }
 
 /* gallery */
-/* .ekko-lightbox-nav-overlay a {
+.ekko-lightbox-nav-overlay a {
     color: goldenrod;
-} */
+}
+
 .gallery-title {
     text-align: center;
 	font-weight: 500;
@@ -483,7 +497,224 @@ header .content p {
 }
 
 .source-title {
-    text-align: center;
     font-size: 10px;
     color: rgba(128, 128, 128, 0.8);
 }
+
+/* VIsi Misi */
+.vm-title h1 {
+    padding: 1em 0;
+    border-bottom: 3px solid orange;
+}
+
+div.list {
+	position: relative;
+	margin: 0;
+    margin-top: 20px;
+	padding: 0
+}
+
+div.list:before {
+	position: absolute;
+	content: "";
+	width: 3px;
+	height: 100%;
+	background-color: orange;
+	left: 50%;
+	top: 0; 
+	transform: translateX(-50%);
+}
+
+.visi-misi-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.visi-misi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.visi-misi .visi h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.visi-misi .visi ul li{
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.visi-misi .misi h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.visi-misi .misi ul{
+    padding: 0 0 0 50px;
+}
+
+.visi-misi ul li {
+    width: 100%;
+    padding: 0 0 20px 0;
+    text-transform: capitalize
+}
+
+
+@media screen and (max-width : 768px) {
+    .visi-misi {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .visi-misi .visi h3::before{
+        position: absolute;
+        content: " ";
+        width: 10%;
+        height: 3px;
+        left: 50%;
+        top: 30px;
+        background-color: #f49a39;
+        transform: translate(-50%);
+    }
+
+    .visi-misi .misi ul{
+    padding: 0 0 0 30px;
+    }
+
+    div.list:before {
+        display: none;
+    }
+    
+}
+/* VIsi Misi */
+
+/* Contact */
+
+.contact-title {
+    margin: 20px auto;
+    text-align: center;
+    width: 30%;
+    border-bottom: 3px solid #384366;
+}
+
+#map {
+    margin: 50px 0;
+    padding-bottom: 1em;
+    position: relative;
+}
+
+.map-and-contact {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contact-list-container {
+    margin-top: 50px;
+}
+
+.contact-list {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.contact-list li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.contact-list li a {
+    text-decoration: none;
+    color: rgba(129, 129, 243, 0.5);
+    transition: 0.5s;
+}
+
+.contact-list li a:hover {
+    color: #f49a39;
+}
+
+@media screen and (max-width : 768px) {
+    .map-and-contact {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #map {
+        margin: 20px 0 ;
+        padding-bottom: 0;
+    }
+
+    .contact-list {
+        font-size: 17px;
+        margin: 0 0 30px 0;
+    }
+
+    .contact-list-container {
+        margin-top: 20px;
+    }
+}
+
+/* Footer */
+footer {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+    color: #fefefefe;
+    font-family: "Poppins", sans-serif;
+    padding: 50px 0;
+  }
+  
+  footer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer li {
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    list-style: disc;
+    color: #d6d6d6d5;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #f49a39;
+  }
+  
+  footer hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  
+  footer .about p {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #fefefefe;
+  }
+  
+  @media (max-width: 768px) {
+    footer .container {
+        max-width: 90%;
+    }
+    footer .col-md-4 {
+        margin-bottom: 30px;
+    }
+  }
+  
+  /* Footer */
