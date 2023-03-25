@@ -485,4 +485,5 @@ header .content p {
 .source-title {
     text-align: center;
     font-size: 10px;
+    color: rgba(128, 128, 128, 0.8);
 }
