@@ -497,8 +497,10 @@ header .content p {
     padding: 0 0 30px 0;
 }
 
-.source-title {
+.source-title, .source-title a {
     font-size: 10px;
+    text-decoration: none;
+    border: none;
     color: rgba(128, 128, 128, 0.8);
 }
 
