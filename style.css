@@ -637,7 +637,7 @@ div.list:before {
 
 .contact-list li a {
     text-decoration: none;
-    color: rgba(129, 129, 243, 0.);
+    color: rgba(129, 129, 243, 0.6);
     transition: 0.5s;
 }
 
