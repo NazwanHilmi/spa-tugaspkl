@@ -148,6 +148,7 @@ header {
         top: 50px;
         right: 50px;
         background-color: white;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.7);
         width: 250px;
         border-radius: 10px;
         opacity: 0;
@@ -171,14 +172,14 @@ header {
     }
 
     .navigation .box-navigation .box:nth-child(2) ul li a{
-        color: rgb(53, 53, 53);
+        color: rgba(53, 53, 53, 0.7);
         align-items: center;
     }
 
 
     .navigation .box-navigation .box:nth-child(2) ul li a span{ 
         background-color: white;
-        color: rgb(53, 53, 53);
+        color: rgba(53, 53, 53, 0.7);
         padding: 0;
     }
 
