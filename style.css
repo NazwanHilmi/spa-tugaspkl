@@ -740,7 +740,7 @@ footer {
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
     color: #fefefefe;
     font-family: "Poppins", sans-serif;
-    padding: 50px 0;
+    padding: 50px  0 20px 0;
 }
 
     footer h3 {
@@ -769,7 +769,7 @@ footer {
   }
   
   footer hr {
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
     border: none;
     border-top: 1px solid #ccc;
@@ -793,6 +793,12 @@ footer {
         font-size: 14px;
     }
 
+  }
+
+  @media (max-width: 375px) {
+    .text-footer h3 {
+        font-size: 20px;
+    }
   }
   
   /* Footer */
