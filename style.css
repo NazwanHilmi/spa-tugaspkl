@@ -148,7 +148,6 @@ header {
         top: 50px;
         right: 50px;
         background-color: white;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         width: 250px;
         border-radius: 10px;
         opacity: 0;
@@ -172,14 +171,14 @@ header {
     }
 
     .navigation .box-navigation .box:nth-child(2) ul li a{
-        color: rgba(53, 53, 53, 0.8);
+        color: rgb(53, 53, 53);
         align-items: center;
     }
 
 
     .navigation .box-navigation .box:nth-child(2) ul li a span{ 
         background-color: white;
-        color: rgba(53, 53, 53, 0.8);
+        color: rgb(53, 53, 53);
         padding: 0;
     }
 
@@ -301,6 +300,10 @@ header .content p {
 }
 
 @media screen and (max-width : 990px) {
+    .about{
+        height: 120vh;
+    }
+
     .about .box-about {
         flex-direction: column-reverse;
     }
@@ -314,6 +317,8 @@ header .content p {
 
     
 @media screen and (max-width : 575px) {
+    
+    
     .about .box-about .box:nth-child(1) h1 {
         font-size: 34px;
     }
@@ -328,6 +333,10 @@ header .content p {
 }   
 
 @media screen and (max-width : 475px) {
+    .about{
+        height: 100vh;
+    }
+
     .about .box-about .box:nth-child(1) h1 {
         font-size: 28px;
     }
@@ -342,6 +351,10 @@ header .content p {
 }
 
 @media screen and (max-width : 375px) {
+    .about{
+        height: 80vh;
+    }
+
     .about .box-about .box:nth-child(1) h1 {
         font-size: 24px;
     }
@@ -403,6 +416,10 @@ header .content p {
 }
 
 @media screen and (max-width : 990px) {
+    .about-2{
+        height: 120vh;
+    }
+
     .about-2 .box-about {
         flex-direction: column-reverse;
     }
@@ -430,6 +447,10 @@ header .content p {
 }   
 
 @media screen and (max-width : 475px) {
+    .about-2{
+        height: 100vh;
+    }
+
     .about-2 .box-about .box:nth-child(1) h1 {
         font-size: 28px;
     }
@@ -444,6 +465,10 @@ header .content p {
 }
 
 @media screen and (max-width : 375px) {
+    .about-2{
+        height: 80vh;
+    }
+
     .about-2 .box-about .box:nth-child(1) h1 {
         font-size: 24px;
     }
@@ -459,7 +484,7 @@ header .content p {
 
 
 .custom-card {
-    padding: 50px 0 50px 0;
+    padding: 20px 0 50px 0;
     background: #0f0c29;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -603,6 +628,10 @@ div.list::after {
     div.list:before {
         display: none;
     }
+
+    div.list::after {
+        width: 95%;
+    }
     
 }
 /* VIsi Misi */
@@ -662,6 +691,12 @@ div.list::after {
 }
 
 @media screen and (max-width : 768px) {
+    .contact-title {
+        margin: 25px auto;
+        text-align: center;
+        width: 40%;
+    }
+
     .map-and-contact {
         align-items: center;
         flex-direction: column;
@@ -678,13 +713,22 @@ div.list::after {
     }
 
     .contact-list {
+        padding: 0;
         font-size: 15px;
-        margin: 0 auto 30px auto;
+        margin: 0 0 25px 0;
         text-align: center;
     }
 
     .contact-list-container {
         margin-top: 20px;
+    }
+}
+
+@media screen and (max-width : 375px) {
+    .contact-title {
+        margin: 25px auto;
+        text-align: center;
+        width: 50%;
     }
 }
 
@@ -743,6 +787,11 @@ footer {
     footer .col-md-4 {
         margin-bottom: 30px;
     }
+
+    .text-footer {
+        font-size: 14px;
+    }
+
   }
   
   /* Footer */

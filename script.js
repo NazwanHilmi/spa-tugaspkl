@@ -6,8 +6,6 @@ menuBar.addEventListener("click", function(){
     menuNav.classList.toggle("menu-active");
 });
 
-
-// Scroll Change
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navigation');
     const scrolled = window.scrollY > navbar.offsetTop;
@@ -19,11 +17,11 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Card
 $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
         $(this).ekkoLightbox({alwaysShowClose: true});
 });
 
-// AOS
-AOS.init();
+AOS.init({
+    once: true,
+});
